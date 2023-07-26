@@ -2,7 +2,10 @@ import type { NextPage } from "next";
 
 const About: NextPage = () => {
   return (
-    <div className="self-stretch bg-gray-300 flex flex-col py-[140px] px-[94px] items-start justify-start gap-[27px] text-left text-45xl text-white font-poppins sm:pl-4 sm:pr-4 sm:box-border">
+    <div
+      id="about"
+      className="self-stretch bg-gray-300 flex flex-col py-[140px] px-[163px] items-start justify-start gap-[27px] text-left text-45xl text-white font-poppins sm:pl-4 sm:pr-4 sm:box-border"
+    >
       <h4 className="m-0 self-stretch relative text-[inherit] tracking-[-0.5px] leading-[110px] font-semibold font-inherit sm:text-37xl sm:leading-[64px]">
         About me
       </h4>

@@ -2,15 +2,20 @@ import type { NextPage } from "next";
 
 const Skill: NextPage = () => {
   return (
-    <div className="self-stretch bg-gray-300 flex flex-col py-[150px] px-[227px] items-start justify-start gap-[109px] text-center text-45xl text-white font-poppins lg:pl-[180px] lg:pr-[180px] lg:box-border md:pl-9 md:pr-9 md:box-border sm:items-center sm:justify-center sm:pl-4 sm:pr-4 sm:box-border">
-      <div className="self-stretch flex flex-col items-center justify-start gap-[10px]">
-        <h1 className="m-0 self-stretch relative text-[inherit] leading-[100px] font-semibold font-inherit sm:text-45xl sm:text-center sm:flex sm:max-w-0">
+    <div
+      id="skill"
+      className="self-stretch bg-gray-300 flex flex-col py-[140px] px-[70px] items-center justify-center gap-[109px] text-center lg:pl-10 lg:pr-10 lg:box-border md:pl-9 md:pr-9 md:box-border sm:pl-4 sm:pr-4 sm:box-border"
+    >
+      <div className="self-stretch flex flex-col py-0 px-2.5 items-center justify-start gap-[10px]">
+        <h4 className="m-0 self-stretch relative text-[inherit] leading-[100px] font-semibold font-inherit sm:text-37xl sm:leading-[64px] sm:text-center sm:flex sm:max-w-0">
           Skills and Abilities
-        </h1>
-        <div className="self-stretch relative text-5xl text-gray-500">
-          I have extensive JavaScript skills, including expertise in React,
-          React Native, Node.js, Next.js, and GraphQL.
-        </div>
+        </h4>
+        <p className="m-0 self-stretch relative text-5xl text-gray-500 sm:text-xl">
+          <span className="block">{`I have extensive JavaScript skills, including expertise in React, `}</span>
+          <span className="block">
+            React Native, Node.js, Next.js, and GraphQL.
+          </span>
+        </p>
       </div>
       <div className="self-stretch flex flex-col items-center justify-center gap-[46px]">
         <div className="self-stretch flex flex-row items-center justify-center gap-[124px] sm:flex-col">
