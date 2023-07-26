@@ -3,9 +3,13 @@ import { useEffect } from "react";
 
 type DrawerMenu2Type = {
   onClose?: () => void;
+  scrollToSection: (value: string) => void;
 };
 
-const DrawerMenu2: NextPage<DrawerMenu2Type> = ({ onClose }) => {
+const DrawerMenu2: NextPage<DrawerMenu2Type> = ({
+  onClose,
+  scrollToSection,
+}) => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -42,16 +46,53 @@ const DrawerMenu2: NextPage<DrawerMenu2Type> = ({ onClose }) => {
       data-animate-on-scroll
     >
       <img
+        onClick={onClose}
         className="relative w-[21.62px] h-[21.62px] overflow-hidden shrink-0"
         alt=""
         src="/close.svg"
       />
-      <div className="relative leading-[20px]">Home</div>
-      <div className="relative leading-[20px]">Contributors</div>
+      {/* <div className="relative leading-[20px]">Home</div>
+      <div className="relative leading-[20px]"></div>
       <div className="relative leading-[20px]">Services</div>
       <div className="relative leading-[20px]">About me</div>
       <div className="relative leading-[20px]">Portfolio</div>
-      <div className="relative leading-[20px]">Contact</div>
+      <div className="relative leading-[20px]">Contact</div> */}
+      <div
+        onClick={() => scrollToSection("home")}
+        className="relative leading-[20px] "
+      >
+        Home
+      </div>
+      <div
+        onClick={() => scrollToSection("skill")}
+        className="relative leading-[20px]"
+      >
+        Skill
+      </div>
+      <div
+        onClick={() => scrollToSection("service")}
+        className="relative leading-[20px]"
+      >
+        Services
+      </div>
+      <div
+        onClick={() => scrollToSection("about")}
+        className="relative leading-[20px]"
+      >
+        About me
+      </div>
+      <div
+        onClick={() => scrollToSection("portfolio")}
+        className="relative leading-[20px]"
+      >
+        Portfolio
+      </div>
+      <div
+        onClick={() => scrollToSection("contact")}
+        className="relative leading-[20px] "
+      >
+        Contact
+      </div>
     </div>
   );
 };

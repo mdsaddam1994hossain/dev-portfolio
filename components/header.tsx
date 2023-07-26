@@ -41,6 +41,9 @@ const Header: NextPage<HeaderType> = ({
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
+    if (isDrawerMenu2Open) {
+      closeDrawerMenu2();
+    }
     if (router.pathname !== "/") {
       router.push("/");
     }
@@ -140,7 +143,10 @@ const Header: NextPage<HeaderType> = ({
           placement="Right"
           onOutsideClick={closeDrawerMenu2}
         >
-          <DrawerMenu2 onClose={closeDrawerMenu2} />
+          <DrawerMenu2
+            scrollToSection={scrollToSection}
+            onClose={closeDrawerMenu2}
+          />
         </PortalDrawer>
       )}
     </>
