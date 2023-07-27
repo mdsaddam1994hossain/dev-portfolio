@@ -4,12 +4,18 @@ const Skill: NextPage = () => {
   return (
     <div
       id="skill"
-      className="self-stretch bg-gray-300 flex flex-col py-[140px] px-[70px] items-center justify-center gap-[109px] text-center lg:pl-10 lg:pr-10 lg:box-border md:pl-9 md:pr-9 md:box-border sm:pl-4 sm:pr-4 sm:box-border"
+      className="self-stretch bg-gray-300 flex flex-col py-[100px] px-[70px] items-center justify-center gap-[109px] text-center lg:pl-10 lg:pr-10 lg:box-border md:pl-9 md:pr-9 md:box-border sm:pl-4 sm:pr-4 sm:box-border"
     >
       <div className="self-stretch flex flex-col py-0 px-2.5 items-center justify-start gap-[10px]">
-        <h4 className="m-0 self-stretch relative text-[inherit] leading-[100px] font-semibold font-inherit sm:text-37xl sm:leading-[64px] sm:text-center sm:flex sm:max-w-0">
+        {/* <h4 className="m-0 self-stretch w-full relative text-[inherit] leading-[100px] font-semibold font-poppins sm:text-[48px] sm:leading-[64px] sm:text-center sm:max-w-0">
           Skills and Abilities
-        </h4>
+        </h4> */}
+        <div>
+          <h4 className="m-0 text-[56px] sm:text-[48px]">
+            {" "}
+            Skills and Abilities
+          </h4>
+        </div>
         <p className="m-0 self-stretch relative text-5xl text-gray-500 sm:text-xl">
           <span className="block">{`I have extensive JavaScript skills, including expertise in React, `}</span>
           <span className="block">

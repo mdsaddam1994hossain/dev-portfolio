@@ -105,7 +105,7 @@ const Contact: NextPage = () => {
   return (
     <div
       id="contact"
-      className="self-stretch bg-gray-300 flex flex-col pt-[140px] px-52 pb-[200px] items-center justify-center gap-[92px] text-center text-45xl text-white font-poppins lg:pl-[180px] lg:pr-[180px] lg:box-border md:pl-9 md:pr-9 md:box-border sm:pl-4 sm:pr-4 sm:box-border"
+      className="self-stretch bg-gray-300 flex flex-col pt-[80px] px-52 pb-[100px] items-center justify-center gap-[92px] text-center text-45xl text-white font-poppins lg:pl-[180px] lg:pr-[180px] lg:box-border md:pl-9 md:pr-9 md:box-border sm:pl-4 sm:pr-4 sm:box-border"
     >
       <ToastContainer className={"text-lg "} />
       <div className="self-stretch -mt-[84px] flex flex-col items-center justify-start gap-[12px]">

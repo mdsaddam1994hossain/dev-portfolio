@@ -5,10 +5,10 @@ const Services: NextPage = () => {
   return (
     <div
       id="service"
-      className="self-stretch flex flex-col py-[150px] px-40 items-center justify-start gap-[111px] bg-[url(/services@3x.png)] bg-cover bg-no-repeat bg-[top] text-center text-45xl text-white font-poppins lg:pl-[100px] lg:pr-[100px] lg:box-border md:pl-9 md:pr-9 md:box-border sm:pl-4 sm:pr-4 sm:box-border"
+      className="self-stretch flex flex-col py-[100px] px-40 items-center justify-start gap-[111px] bg-[url(/services@3x.png)] bg-cover bg-no-repeat bg-[top] text-center text-45xl text-white font-poppins lg:pl-[100px] lg:pr-[100px] lg:box-border md:pl-9 md:pr-9 md:box-border sm:pl-4 sm:pr-4 sm:box-border"
     >
       <div className="self-stretch flex flex-col items-center justify-start gap-[12px]">
-        <h4 className="m-0 self-stretch relative text-[inherit] leading-[100px] font-semibold font-inherit sm:text-37xl">
+        <h4 className="m-0 self-stretch relative text-[inherit] leading-[80px] font-semibold font-inherit sm:text-[48px]">
           <span>Services</span>
           <span className="text-gray-100">.</span>
         </h4>

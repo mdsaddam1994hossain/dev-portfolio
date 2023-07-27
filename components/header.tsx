@@ -17,7 +17,8 @@ const Header: NextPage<HeaderType> = ({
   menu,
   navigationBackgroundColor,
 }) => {
-  const [active, setActive] = useState<string>("home");
+  const [active, setActive] = useState<string>("");
+  const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
   const navigationStyle: CSS.Properties = useMemo(() => {
     return {
@@ -53,16 +54,35 @@ const Header: NextPage<HeaderType> = ({
     if (router.pathname === "/") {
       scrollToSection(active);
     }
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [router.pathname]);
 
   return (
-    <>
+    <div
+      className={`top-0 z-50 mt-14 ${
+        scrolled
+          ? "sticky duration-1000 shadow-lg  ease-in-out transition-all translate-y-0"
+          : "-translate-y-14 -mb-14"
+      }`}
+    >
       <div
-        className="self-stretch bg-gray-300 flex flex-row py-9 px-[165px] items-center justify-between text-left text-3xl text-snow-200 font-poppins lg:pl-40 lg:pr-40 lg:box-border md:pl-9 md:pr-9 md:box-border sm:pl-4 sm:pr-4 sm:box-border"
+        className="self-stretch bg-gray-300 flex flex-row py-[30px] px-[165px] items-center justify-between text-left text-3xl text-snow-200 font-poppins lg:pl-40 lg:pr-40 lg:box-border md:pl-9 md:pr-9 md:box-border sm:pl-4 sm:pr-4 sm:box-border"
         style={navigationStyle}
       >
         <img
-          className="relative w-[77px] h-8 overflow-hidden shrink-0"
+          onClick={() => scrollToSection("home")}
+          className="relative w-[77px] h-8 overflow-hidden shrink-0 cursor-pointer"
           alt=""
           src="/logo.svg"
         />
@@ -149,7 +169,7 @@ const Header: NextPage<HeaderType> = ({
           />
         </PortalDrawer>
       )}
-    </>
+    </div>
   );
 };
 
