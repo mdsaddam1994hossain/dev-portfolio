@@ -38,7 +38,7 @@ const DrawerMenu: NextPage<DrawerMenuType> = ({ onClose }) => {
 
   return (
     <div
-      className="relative bg-tomato-100 flex flex-col py-[50px] px-[69px] box-border items-start justify-start gap-[44px] [&.animate]:animate-[0.25s_ease_0s_1_normal_forwards_slide-in-right] opacity-[0] h-full max-w-[90%] overflow-auto text-left text-3xl text-snow-200 font-poppins"
+      className="relative bg-tomato flex flex-col py-[50px] px-[69px] box-border items-start justify-start gap-[44px] [&.animate]:animate-[0.25s_ease_0s_1_normal_forwards_slide-in-right] opacity-[0] h-full max-w-[90%] overflow-auto text-left text-3xl text-snow font-poppins"
       data-animate-on-scroll
     >
       <img
