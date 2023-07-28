@@ -4,7 +4,7 @@ const About: NextPage = () => {
   return (
     <div
       id="about"
-      className="self-stretch bg-gray-300 flex flex-col py-[100px] px-[163px] items-start justify-start gap-[27px] text-left text-45xl text-white font-poppins sm:pl-4 sm:pr-4 sm:box-border"
+      className="self-stretch bg-gray-300 flex flex-col py-[100px] px-40 items-start justify-start gap-[27px] text-left text-45xl text-white font-poppins sm:gap-[10px] sm:pl-4 sm:pr-4 sm:box-border"
     >
       <h4 className="m-0 self-stretch relative text-[inherit] tracking-[-0.5px] leading-[80px] font-semibold font-inherit sm:text-[48px] sm:leading-[64px]">
         About me

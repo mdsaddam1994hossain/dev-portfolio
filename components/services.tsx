@@ -21,19 +21,19 @@ const Services: NextPage = () => {
       <div className="self-stretch flex flex-row items-start justify-start gap-[20px] text-11xl text-gray-200 md:flex-col sm:flex-col">
         <Service
           title="Frontend & Backend Development"
-          icon="/vector11.svg"
+          icon="/vector1.svg"
           description="Front-end development emphasizes the visual and interactive
           elements of a website, while back-end development handles the
           site's structure, system, data, and logic."
         />
         <Service
           title=" Mobile App Development"
-          icon="/vector21.svg"
+          icon="/vector2.svg"
           description="I specialize in mobile app development for iOS and Android platforms. I create native or hybrid apps with a focus on performance, user experience &compatibility across devices."
         />
         <Service
           title="Web Development"
-          icon="/vector31.svg"
+          icon="/vector3.svg"
           description="I’m offering web development services, building user-friendly
             websites and web applications with responsive designs and
             integrated backend systems."

@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        white: "#fff",
         gray: {
           "100": "#757575",
           "200": "#292b37",
@@ -15,34 +14,22 @@ module.exports = {
           "400": "rgba(255, 255, 255, 0.8)",
           "500": "rgba(255, 255, 255, 0.7)",
           "600": "rgba(255, 255, 255, 0.6)",
+          "700": "rgba(37, 39, 52, 0.7)",
           "800": "rgba(255, 255, 255, 0.3)",
           "900": "rgba(255, 255, 255, 0.05)",
-          "1000": "#202020",
-          "1400": "rgba(0, 0, 0, 0.6)",
-          "1600": "rgba(0, 0, 0, 0.7)",
-          "1900": "rgba(255, 255, 255, 0.1)",
         },
+        white: "#fff",
         darkslategray: {
           "100": "#2a2c39",
           "200": "#2a2c38",
         },
         dimgray: "#5f5f5f",
-        snow: {
-          "100": "#fff9f9",
-          "200": "#fff7f7",
-        },
-        tomato: {
-          "100": "#fd5956",
-          "200": "#fd5955",
-          "300": "rgba(253, 89, 86, 0.8)",
-        },
-        black: "#000",
-        whitesmoke: "#f2f2f2",
+        snow: "#fff7f7",
+        tomato: "#fd5956",
       },
       fontFamily: {
         poppins: "Poppins",
         inter: "Inter",
-        manrope: "Manrope",
       },
       borderRadius: {
         "3xs": "10px",
@@ -50,19 +37,20 @@ module.exports = {
       },
     },
     fontSize: {
-      "3xl": "22px",
       xl: "20px",
       lg: "18px",
       "13xl": "32px",
-      "9xl": "28px",
+      "5xl": "24px",
       "45xl": "64px",
+      "29xl": "48px",
+      sm: "14px",
+      mini: "15px",
+      "9xl": "28px",
       "37xl": "56px",
       "17xl": "36px",
-      "5xl": "24px",
+      "3xl": "22px",
       "11xl": "30px",
       "91xl": "110px",
-      "51xl": "70px",
-      "95xl": "114px",
     },
     screens: {
       lg: {

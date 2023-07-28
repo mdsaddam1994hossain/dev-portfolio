@@ -90,7 +90,7 @@ const Header: NextPage<HeaderType> = ({
           <div className="flex flex-row items-end justify-start gap-[40px] md:hidden">
             <div
               onClick={() => scrollToSection("home")}
-              className={`relative  leading-[20px] text-white cursor-pointer ${
+              className={`relative  leading-[20px] text-white text-white cursor-pointer ${
                 active === "home" &&
                 "underline underline-offset-8 transition-all ease-in-out duration-500"
               }`}
@@ -99,7 +99,7 @@ const Header: NextPage<HeaderType> = ({
             </div>
             <div
               onClick={() => scrollToSection("skill")}
-              className={`relative leading-[20px] cursor-pointer ${
+              className={`relative leading-[20px] text-white cursor-pointer ${
                 active === "skill" &&
                 "underline underline-offset-8 transition-all ease-in-out duration-500"
               }`}
@@ -108,7 +108,7 @@ const Header: NextPage<HeaderType> = ({
             </div>
             <div
               onClick={() => scrollToSection("service")}
-              className={`relative leading-[20px] cursor-pointer ${
+              className={`relative leading-[20px] text-white cursor-pointer ${
                 active === "service" &&
                 "underline underline-offset-8 transition-all ease-in-out duration-500"
               }`}
@@ -117,7 +117,7 @@ const Header: NextPage<HeaderType> = ({
             </div>
             <div
               onClick={() => scrollToSection("about")}
-              className={`relative leading-[20px] cursor-pointer ${
+              className={`relative leading-[20px] text-white cursor-pointer ${
                 active === "about" &&
                 "underline underline-offset-8 transition-all ease-in-out duration-500"
               }`}
@@ -126,7 +126,7 @@ const Header: NextPage<HeaderType> = ({
             </div>
             <div
               onClick={() => scrollToSection("portfolio")}
-              className={`relative leading-[20px] cursor-pointer ${
+              className={`relative leading-[20px] text-white cursor-pointer ${
                 active === "portfolio" &&
                 "underline underline-offset-8 transition-all ease-in-out duration-500"
               }`}
@@ -135,7 +135,7 @@ const Header: NextPage<HeaderType> = ({
             </div>
             <div
               onClick={() => scrollToSection("contact")}
-              className={`relative leading-[20px] cursor-pointer ${
+              className={`relative leading-[20px] text-white cursor-pointer ${
                 active === "contact" &&
                 "underline underline-offset-8 transition-all ease-in-out duration-500"
               }`}
@@ -143,23 +143,21 @@ const Header: NextPage<HeaderType> = ({
               Contact
             </div>
           </div>
-          {!menu && (
-            <button
-              className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-6 h-[18px] overflow-hidden shrink-0 hidden md:flex"
-              onClick={openDrawerMenu2}
-            >
-              <img
-                className="absolute top-[0px] left-[0px] w-6 h-[18px]"
-                alt=""
-                src="/vector.svg"
-              />
-            </button>
-          )}
+          <button
+            className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-6 h-[18px] overflow-hidden shrink-0 hidden md:flex"
+            onClick={openDrawerMenu2}
+          >
+            <img
+              className="absolute top-[0px] left-[0px] w-6 h-[18px]"
+              alt=""
+              src="/vector.svg"
+            />
+          </button>
         </div>
       </div>
       {isDrawerMenu2Open && (
         <PortalDrawer
-          overlayColor="rgba(21, 20, 20, 0.3)"
+          overlayColor="rgba(113, 113, 113, 0.3)"
           placement="Right"
           onOutsideClick={closeDrawerMenu2}
         >

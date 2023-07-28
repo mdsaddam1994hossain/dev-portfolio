@@ -16,7 +16,7 @@ const FeaturedWork = () => {
             <img
               className="bottom-8 right-4 w-[45px] h-[45px] absolute "
               alt=""
-              src="vector1.svg"
+              src="vector11.svg"
             />
           </span>
         </div>
@@ -26,7 +26,7 @@ const FeaturedWork = () => {
             <img
               className="bottom-8 right-4 w-[45px] h-[45px] absolute "
               alt=""
-              src="vector1.svg"
+              src="vector11.svg"
             />
           </span>
         </div>
@@ -36,7 +36,7 @@ const FeaturedWork = () => {
             <img
               className="bottom-8 right-4 w-[45px] h-[45px] absolute "
               alt=""
-              src="vector1.svg"
+              src="vector11.svg"
             />
           </span>
         </div>
@@ -46,7 +46,7 @@ const FeaturedWork = () => {
             <img
               className="bottom-8 right-4 w-[45px] h-[45px] absolute "
               alt=""
-              src="vector1.svg"
+              src="vector11.svg"
             />
           </span>
         </div>
@@ -56,7 +56,7 @@ const FeaturedWork = () => {
             <img
               className="bottom-8 right-4 w-[45px] h-[45px] absolute "
               alt=""
-              src="vector1.svg"
+              src="vector11.svg"
             />
           </span>
         </div>
@@ -66,7 +66,7 @@ const FeaturedWork = () => {
             <img
               className="bottom-8 right-4 w-[45px] h-[45px] absolute "
               alt=""
-              src="vector1.svg"
+              src="vector11.svg"
             />
           </span>
         </div>

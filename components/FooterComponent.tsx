@@ -15,7 +15,7 @@ const Footer: NextPage = () => {
           <img
             className="relative w-[29.47px] h-[29.61px] cursor-pointer"
             alt=""
-            src="/group3.svg"
+            src="/group.svg"
           />
         </a>
         <a
@@ -26,16 +26,16 @@ const Footer: NextPage = () => {
           <img
             className="relative w-[29.47px] h-[29.61px] cursor-pointer"
             alt=""
-            src="/group3.svg"
+            src="/group.svg"
           />
         </a>
-        {/* <a href="https://www.facebook.com/rakin.afser" target={"_blank"}>
+        <a href="https://www.facebook.com/rakin.afser" target={"_blank"}>
           <img
             className="relative w-[29.47px] h-[29.61px] cursor-pointer"
             alt=""
-            src="/fb-icon.svg"
+            src="/fbIcon2.svg"
           />
-        </a> */}
+        </a>
         <a
           href="https://www.linkedin.com/in/rakin-afser-1004076b/"
           target={"_blank"}
@@ -43,19 +43,19 @@ const Footer: NextPage = () => {
           <img
             className="relative w-[30px] h-[30px] cursor-pointer"
             alt=""
-            src="/vector61.svg"
+            src="/vector5.svg"
           />
         </a>
-        {/* <a
+        <a
           href="https://www.youtube.com/channel/UC7jO-BCFN1awX2KuxmCYbew"
           target={"_blank"}
         >
           <img
             className="relative w-[36.42px] h-[29.61px] cursor-pointer"
             alt=""
-            src="/YouTube.svg"
+            src="/youtube2.svg"
           />
-        </a> */}
+        </a>
       </div>
     </div>
   );

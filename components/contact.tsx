@@ -119,7 +119,7 @@ const Contact: NextPage = () => {
       </div>
 
       <form
-        className="self-stretch -mt-8 rounded-3xs bg-white flex flex-col py-[100px] px-28 items-start justify-start gap-[49px] text-left text-xl font-inter lg:pl-20 lg:pr-20 lg:box-border md:py-[50px] md:px-9 md:box-border sm:py-6 sm:px-4 sm:box-border"
+        className="self-stretch bg-darkslategray-100 flex flex-col py-[100px] px-52 items-center justify-center gap-[92px] text-center text-45xl text-white font-poppins lg:pl-[180px] lg:pr-[180px] lg:box-border md:pl-9 md:pr-9 md:box-border sm:gap-[50px] sm:pl-4 sm:pr-4 sm:box-border"
         onSubmit={handleSubmit}
       >
         <div className="self-stretch flex flex-col items-start justify-start gap-[38px]">
@@ -128,7 +128,7 @@ const Contact: NextPage = () => {
             name="fullName"
             value={formData.fullName}
             onChange={handleChange}
-            className="ont-medium font-inter text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border  border-solid border-gray-300"
+            className="ont-medium font-inter text-xl text-white bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border  border-solid border-white border-opacity-30"
             placeholder="Full Name"
           />
           {errors.fullName && (
@@ -141,7 +141,7 @@ const Contact: NextPage = () => {
             name="emailAddress"
             value={formData.emailAddress}
             onChange={handleChange}
-            className="ont-medium font-inter text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-gray-300"
+            className="ont-medium font-inter text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
             placeholder="Email Address"
           />
           <input
@@ -149,7 +149,7 @@ const Contact: NextPage = () => {
             name="phoneNumber"
             value={formData.phoneNumber}
             onChange={handleChange}
-            className="ont-medium font-inter text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-gray-300"
+            className="ont-medium font-inter text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
             placeholder="Phone Number"
           />
           {errors.phoneNumber && (
@@ -161,7 +161,7 @@ const Contact: NextPage = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="ont-medium font-inter h-32 text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-gray-300"
+            className="ont-medium font-inter h-32 text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
             placeholder="Message"
           />
           {errors.message && (
@@ -170,12 +170,12 @@ const Contact: NextPage = () => {
         </div>
         <button
           type="submit"
-          className="cursor-pointer [border:none] py-3.5 px-[100px] bg-gray-300 hover:bg-gray-200 self-stretch rounded-8xs h-[72px] flex flex-row box-border items-center justify-center"
+          className="cursor-pointer [border:none] py-3.5 px-[100px] bg-white  self-stretch rounded-8xs h-[72px] flex flex-row box-border items-center justify-center"
         >
-          <span className="flex-1 relative text-13xl leading-[180.02%] font-semibold font-inter text-white text-center">
+          <span className="flex-1 relative text-13xl leading-[180.02%] font-semibold font-inter text-gray-200 text-center">
             {loading ? (
               <div className="flex space-x-2 animate-spin justify-center">
-                <div className="animate-spin justify-center text-center rounded-full border-t-2 border-white border-solid h-6 w-6"></div>
+                <div className="animate-spin justify-center text-center rounded-full border-t-2  border-solid h-6 w-6"></div>
               </div>
             ) : (
               "Submit"
