@@ -2,12 +2,12 @@ import type { NextPage } from "next";
 
 const ContactFormContainer: NextPage = () => {
   return (
-    <div className="self-stretch bg-gray-300 flex flex-col py-[100px] px-52 items-center justify-center gap-[92px] text-center text-45xl text-white font-poppins lg:pl-[180px] lg:pr-[180px] lg:box-border md:pl-9 md:pr-9 md:box-border sm:gap-[50px] sm:pl-4 sm:pr-4 sm:box-border">
+    <div className="self-stretch bg-darkslategray-100 flex flex-col py-[100px] px-52 items-center justify-center gap-[92px] text-center text-45xl text-white font-poppins lg:pl-[180px] lg:pr-[180px] lg:box-border md:pl-9 md:pr-9 md:box-border sm:gap-[50px] sm:pl-4 sm:pr-4 sm:box-border">
       <div className="self-stretch flex flex-col items-center justify-start gap-[12px]">
         <div className="self-stretch relative tracking-[-0.5px] font-semibold sm:text-29xl">
           Contact Me
         </div>
-        <div className="self-stretch relative text-5xl leading-[40px] text-gray-600 sm:text-xl">
+        <div className="self-stretch relative text-5xl leading-[40px] text-gray-600 sm:text-xl sm:leading-[28px]">
           <p className="m-0">{`If you are looking to hire a developer, `}</p>
           <p className="m-0">I’m currently available for freelance work</p>
         </div>

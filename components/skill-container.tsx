@@ -14,7 +14,7 @@ const SkillContainer: NextPage = () => {
           </span>
         </p>
       </div>
-      <div className="self-stretch flex flex-col items-center justify-center gap-[46px]">
+      <div className="self-stretch flex flex-col items-center justify-center gap-[46px] sm:gap-[100px]">
         <div className="self-stretch flex flex-row items-center justify-center gap-[124px] sm:flex-col">
           <img
             className="relative w-[161px] h-[146px] object-cover"

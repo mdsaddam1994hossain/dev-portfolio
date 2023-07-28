@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        white: "#fff",
         gray: {
           "100": "#757575",
           "200": "#292b37",
@@ -15,9 +14,11 @@ module.exports = {
           "400": "rgba(255, 255, 255, 0.8)",
           "500": "rgba(255, 255, 255, 0.7)",
           "600": "rgba(255, 255, 255, 0.6)",
+          "700": "rgba(37, 39, 52, 0.7)",
           "800": "rgba(255, 255, 255, 0.3)",
           "900": "rgba(255, 255, 255, 0.05)",
         },
+        white: "#fff",
         darkslategray: {
           "100": "#2a2c39",
           "200": "#2a2c38",
@@ -36,12 +37,18 @@ module.exports = {
       },
     },
     fontSize: {
-      "3xl": "22px",
       xl: "20px",
+      lg: "18px",
       "13xl": "32px",
       "5xl": "24px",
       "45xl": "64px",
       "29xl": "48px",
+      sm: "14px",
+      mini: "15px",
+      "9xl": "28px",
+      "37xl": "56px",
+      "17xl": "36px",
+      "3xl": "22px",
       "11xl": "30px",
       "91xl": "110px",
     },
