@@ -6,7 +6,7 @@ const Meeting = () => {
     <div className="self-stretch flex items-center justify-center my-20 mx-[163px] sm:mx-4">
       <div className="p-8 sm:p-2 bg-white shadow-lg rounded-lg max-w-6xl">
         {" "}
-        <h1 className="text-[56px] font-poppins sm:text[36px] font-semibold text-center text-gray-200">
+        <h1 className="text-[56px] font-poppins sm:text-[48px] font-semibold text-center text-gray-200">
           Schedule a Meeting <br /> Talk with Rakin Afser
         </h1>
         <p className="mt-4 text-lg text-center text-gray-200 font-poppins px-24 sm:px-0">

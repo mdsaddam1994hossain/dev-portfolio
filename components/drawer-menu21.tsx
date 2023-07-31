@@ -77,10 +77,16 @@ const DrawerMenu21: NextPage<DrawerMenu21Type> = ({
         About me
       </div>
       <div
-        onClick={() => scrollToSection("portfolio")}
+        onClick={() => scrollToSection("our_work")}
         className="relative leading-[20px]"
       >
-        Portfolio
+        Our work
+      </div>
+      <div
+        onClick={() => scrollToSection("testimonials")}
+        className="relative leading-[20px]"
+      >
+        Testimonials
       </div>
       <div
         onClick={() => scrollToSection("contact")}

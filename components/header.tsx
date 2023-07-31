@@ -125,13 +125,22 @@ const Header: NextPage<HeaderType> = ({
               About me
             </div>
             <div
-              onClick={() => scrollToSection("portfolio")}
+              onClick={() => scrollToSection("our_work")}
               className={`relative leading-[20px] text-white cursor-pointer ${
-                active === "portfolio" &&
+                active === "our_work" &&
                 "underline underline-offset-8 transition-all ease-in-out duration-500"
               }`}
             >
-              Portfolio
+              Our work
+            </div>
+            <div
+              onClick={() => scrollToSection("testimonials")}
+              className={`relative leading-[20px] text-white cursor-pointer ${
+                active === "testimonials" &&
+                "underline underline-offset-8 transition-all ease-in-out duration-500"
+              }`}
+            >
+              Testimonials
             </div>
             <div
               onClick={() => scrollToSection("contact")}

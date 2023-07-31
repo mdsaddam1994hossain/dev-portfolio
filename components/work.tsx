@@ -4,7 +4,7 @@ import { workData } from "../utils/data";
 const FeaturedWork = () => {
   return (
     <div
-      id="portfolio"
+      id="our_work"
       className="self-stretch bg-darkslategray-100 flex flex-col py-[100px] px-[163px] items-start justify-start gap-[100px] font-inter lg:pl-[140px] lg:pr-[140px] lg:box-border md:pl-9 md:pr-9 md:box-border sm:pl-4 sm:pr-4 sm:box-border"
     >
       <h4 className="m-0 self-stretch relative text-[56px] font-poppins leading-[70px] font-semibold font-inherit sm:text-[48px] sm:leading-[60px]">

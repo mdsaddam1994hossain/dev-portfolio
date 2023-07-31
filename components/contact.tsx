@@ -109,7 +109,7 @@ const Contact: NextPage = () => {
     >
       <ToastContainer className={"text-lg "} />
       <div className="self-stretch -mt-[84px] flex flex-col items-center justify-start gap-[12px]">
-        <div className="self-stretch relative tracking-[-0.5px] font-semibold sm:text-37xl">
+        <div className="self-stretch text-[56px] relative tracking-[-0.5px] font-semibold sm:text-[48px]">
           Contact Me
         </div>
         <div className="self-stretch relative text-9xl leading-[40px] text-gray-600 sm:text-xl">
@@ -119,16 +119,17 @@ const Contact: NextPage = () => {
       </div>
 
       <form
-        className="self-stretch bg-darkslategray-100 flex flex-col py-[100px] px-52 items-center justify-center gap-[92px] text-center text-45xl text-white font-poppins lg:pl-[180px] lg:pr-[180px] lg:box-border md:pl-9 md:pr-9 md:box-border sm:gap-[50px] sm:pl-4 sm:pr-4 sm:box-border"
+        className="self-stretch bg-darkslategray-100 -mt-8 flex flex-col py-[100px] px-52 items-center justify-center gap-[92px] text-center text-45xl text-white font-poppins lg:pl-[180px] lg:pr-[180px] lg:box-border md:pl-9 md:pr-9 md:box-border sm:gap-[50px] sm:pl-4 sm:pr-4 sm:box-border"
         onSubmit={handleSubmit}
       >
         <div className="self-stretch flex flex-col items-start justify-start gap-[38px]">
+          <label className="m-0 text-[20px]">Full Name</label>
           <input
             type="text"
             name="fullName"
             value={formData.fullName}
             onChange={handleChange}
-            className="ont-medium font-inter text-xl text-white bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border  border-solid border-white border-opacity-30"
+            className="ont-medium -mt-6 font-inter text-xl text-white bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border  border-solid border-white border-opacity-30"
             placeholder="Full Name"
           />
           {errors.fullName && (
@@ -136,20 +137,22 @@ const Contact: NextPage = () => {
               {errors.fullName}
             </span>
           )}
+          <label className="m-0 text-[20px]">Email Address</label>
           <input
             type="email"
             name="emailAddress"
             value={formData.emailAddress}
             onChange={handleChange}
-            className="ont-medium font-inter text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
+            className="ont-medium font-inter -mt-6 text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
             placeholder="Email Address"
           />
+          <label className="m-0 text-[20px]">Phone Number</label>
           <input
             type="tel"
             name="phoneNumber"
             value={formData.phoneNumber}
             onChange={handleChange}
-            className="ont-medium font-inter text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
+            className="ont-medium font-inter -mt-6 text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
             placeholder="Phone Number"
           />
           {errors.phoneNumber && (
@@ -157,11 +160,12 @@ const Contact: NextPage = () => {
               {errors.phoneNumber}
             </span>
           )}
+          <label className="m-0 text-[20px]">Message</label>
           <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="ont-medium font-inter h-32 text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
+            className="ont-medium font-inter -mt-6 h-32 text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
             placeholder="Message"
           />
           {errors.message && (

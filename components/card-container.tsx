@@ -19,7 +19,7 @@ const CardContainer: NextPage<CardContainerType> = ({
 }) => {
   const [openModal, setOpenModal] = useState<boolean>(false);
   return (
-    <div className="self-stretch h-[430px] transition duration-500 ease-in-out transform hover:-translate-y-5 flex-1 rounded-3xs flex flex-col py-[49px] px-5 items-center justify-start gap-[40px] bg-[url(/testimonials@3x.png)] bg-cover bg-no-repeat bg-[top] text-center text-mini text-gray-300 font-poppins md:flex-[unset] md:self-stretch">
+    <div className="self-stretch  transition duration-500 ease-in-out transform hover:-translate-y-5 flex-1 rounded-3xs flex flex-col pt-[50px] pb-[30px] px-5 items-center justify-start gap-[40px] bg-[url(/testimonials@3x.png)] bg-cover bg-no-repeat bg-[top] text-center text-mini text-gray-300 font-poppins md:flex-[unset] md:self-stretch">
       <div className="self-stretch flex flex-col items-center justify-start gap-[24px]">
         <div
           style={{
