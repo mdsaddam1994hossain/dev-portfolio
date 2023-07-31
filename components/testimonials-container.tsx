@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
+import { testimonialData } from "../utils/data";
 import CardContainer from "./card-container";
+import VideoModal from "./modal/VideoModal";
 
 const TestimonialsContainer: NextPage = () => {
   return (
@@ -12,22 +14,18 @@ const TestimonialsContainer: NextPage = () => {
           Customer reviews that build trust for a business
         </p>
       </div>
-      <div className="self-stretch flex flex-row items-start justify-start gap-[16px] text-mini text-gray-300 md:flex-col">
-        <CardContainer
-          userAvatar="/image.svg"
-          userName="William E. Monroe"
-          jobTitle="Aquarius Manager"
-        />
-        <CardContainer
-          userAvatar="/image1.svg"
-          userName="Craig I. Juarez"
-          jobTitle="Pisces @CEO"
-        />
-        <CardContainer
-          userAvatar="/image2.svg"
-          userName="John D. Starr"
-          jobTitle="Medical Doctor"
-        />
+      <div className="self-stretch grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 text-mini text-gray-300 ">
+        {testimonialData?.map((item, index) => {
+          return (
+            <CardContainer
+              userAvatar={item?.clientImage}
+              userName={item?.clientName}
+              jobTitle={item?.clientdesig}
+              description={item?.description}
+              videoUrl={item?.videoUrl}
+            />
+          );
+        })}
       </div>
     </div>
   );

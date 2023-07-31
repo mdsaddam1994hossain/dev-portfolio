@@ -90,7 +90,7 @@ const Header: NextPage<HeaderType> = ({
           <div className="flex flex-row items-end justify-start gap-[40px] md:hidden">
             <div
               onClick={() => scrollToSection("home")}
-              className={`relative  leading-[20px] text-white text-white cursor-pointer ${
+              className={`relative  leading-[20px] text-white  cursor-pointer ${
                 active === "home" &&
                 "underline underline-offset-8 transition-all ease-in-out duration-500"
               }`}

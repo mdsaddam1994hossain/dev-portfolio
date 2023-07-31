@@ -1,4 +1,5 @@
 import React from "react";
+import { workData } from "../utils/data";
 
 const FeaturedWork = () => {
   return (
@@ -10,66 +11,27 @@ const FeaturedWork = () => {
         Featured Work
       </h4>
       <div className=" -mt-12 self-stretch grid grid-cols-6 gap-10">
-        <div className="col-span-2 sm:col-span-6 md:col-span-3 ">
-          <span className="relative">
-            <img className="relative w-full h-full  " alt="" src="/1@3x.png" />
-            <img
-              className="bottom-8 right-4 w-[45px] h-[45px] absolute "
-              alt=""
-              src="vector11.svg"
-            />
-          </span>
-        </div>
-        <div className="col-span-2 sm:col-span-6 md:col-span-3">
-          <span className="relative">
-            <img className="relative w-full h-full  " alt="" src="/7@3x.png" />
-            <img
-              className="bottom-8 right-4 w-[45px] h-[45px] absolute "
-              alt=""
-              src="vector11.svg"
-            />
-          </span>
-        </div>
-        <div className="col-span-2 sm:col-span-6 md:col-span-3">
-          <span className="relative">
-            <img className="relative w-full h-full  " alt="" src="/8@3x.png" />
-            <img
-              className="bottom-8 right-4 w-[45px] h-[45px] absolute "
-              alt=""
-              src="vector11.svg"
-            />
-          </span>
-        </div>
-        <div className="col-span-2 sm:col-span-6 md:col-span-3">
-          <span className="relative">
-            <img className="relative w-full h-full  " alt="" src="/9@3x.png" />
-            <img
-              className="bottom-8 right-4 w-[45px] h-[45px] absolute "
-              alt=""
-              src="vector11.svg"
-            />
-          </span>
-        </div>
-        <div className="col-span-2 sm:col-span-6 md:col-span-3">
-          <span className="relative">
-            <img className="relative w-full h-full  " alt="" src="/10@3x.png" />
-            <img
-              className="bottom-8 right-4 w-[45px] h-[45px] absolute "
-              alt=""
-              src="vector11.svg"
-            />
-          </span>
-        </div>
-        <div className="col-span-2 sm:col-span-6 md:col-span-3">
-          <span className="relative">
-            <img className="relative w-full h-full  " alt="" src="/11@3x.png" />
-            <img
-              className="bottom-8 right-4 w-[45px] h-[45px] absolute "
-              alt=""
-              src="vector11.svg"
-            />
-          </span>
-        </div>
+        {workData?.map((item, index) => {
+          return (
+            <div
+              key={index}
+              className="col-span-2 sm:col-span-6 md:col-span-3 transition duration-500 ease-in-out transform hover:-translate-y-5 "
+            >
+              <a href={item?.url} target="_blank" className="relative">
+                <img
+                  className="relative w-full h-full  "
+                  alt=""
+                  src={item.img}
+                />
+                <img
+                  className="bottom-8 right-4 w-[45px] h-[45px] absolute "
+                  alt=""
+                  src="vector11.svg"
+                />
+              </a>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
