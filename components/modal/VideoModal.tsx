@@ -1,7 +1,15 @@
 import React, { FC, useState } from "react";
-import { Modal } from "flowbite-react";
+import { CustomFlowbiteTheme, Modal } from "flowbite-react";
 
 import ReactPlayer from "react-player";
+
+const customTheme: CustomFlowbiteTheme["modal"] = {
+  header: {
+    close: {
+      base: "hover:bg-white  text-white",
+    },
+  },
+};
 
 type Props = {
   openModal: boolean;
@@ -20,11 +28,17 @@ const VideoModal: FC<Props> = ({ openModal, setOpenModal, videoUrl }) => {
         onClose={() => {
           setOpenModal(false);
         }}
-        className={`pt-[10%] sm:pt-0`}
+        theme={customTheme}
+        className={`pt-[15%] sm:pt-0`}
       >
-        <Modal.Header className="bg-gray-200 h-5 "></Modal.Header>
-        <Modal.Body>
-          <div className="relative mt-1 h-96 rounded-xl  lg:h-96 xl:h-[450px]">
+        <Modal.Body className="!p-2">
+          <button
+            className="absolute bg-gray-200 hover:bg-black cursor-pointer w-8 h-8 -right-4 -top-4 rounded-full flex justify-center items-center"
+            onClick={() => setOpenModal(false)}
+          >
+            <img src="/close2.svg" className="w-3 h-3" />
+          </button>
+          <div className="relative  h-96 rounded-xl  lg:h-96 xl:h-[450px]">
             <ReactPlayer
               url={`${videoUrl}`}
               className="react-player-large"
