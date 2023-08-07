@@ -1,7 +1,15 @@
-import { Modal } from "flowbite-react";
 import React, { ChangeEvent, FC, FormEvent, useState } from "react";
 import { toast } from "react-toastify";
+import { CustomFlowbiteTheme, Modal } from "flowbite-react";
 import firebase from "../../config/firebase";
+
+const customTheme: CustomFlowbiteTheme["modal"] = {
+  header: {
+    close: {
+      base: "hover:bg-white  text-white",
+    },
+  },
+};
 
 type Props = {
   openModal: boolean;
@@ -26,8 +34,14 @@ const ContactModal: FC<Props> = ({ openModal, setOpenModal }) => {
   const handleChange = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = event.target;
+    const { name, value } = event?.target;
     if (name === "fullName") {
+      setFormData({
+        fullName: value,
+        emailAddress: value,
+        message: value,
+        phoneNumber: value,
+      });
       setErrors((prevErrors) => ({
         ...prevErrors,
         fullName: value.trim() === "" ? "Please enter your full name" : "",
@@ -72,8 +86,9 @@ const ContactModal: FC<Props> = ({ openModal, setOpenModal }) => {
           email: formData?.emailAddress,
           phone: formData?.phoneNumber,
           messageBox: formData?.message,
-          source: "ui/ux profile",
+          source: "Development profile",
         });
+
         setLoading(false);
         toast("Success! We'll get back to you shortl", {
           position: "bottom-right",
@@ -114,9 +129,7 @@ const ContactModal: FC<Props> = ({ openModal, setOpenModal }) => {
       <Modal
         position="center"
         show={openModal === true}
-        onClose={() => {
-          setOpenModal(false);
-        }}
+        theme={customTheme}
         className={`pt-[7%] sm:pt-[10%]  !px-4`}
       >
         <Modal.Body className="!p-2 px-2">
@@ -137,9 +150,8 @@ const ContactModal: FC<Props> = ({ openModal, setOpenModal }) => {
                 <input
                   type="text"
                   name="fullName"
-                  value={formData.fullName}
                   onChange={handleChange}
-                  className="ont-medium -mt-6 font-inter text-xl text-white bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border  border-solid border-white border-opacity-30"
+                  className="ont-medium -mt-6 font-inter text-xl text-white bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 px-[20px]  items-center justify-center border  border-solid border-white border-opacity-30"
                   placeholder="Full Name"
                 />
                 {errors.fullName && (
@@ -151,18 +163,16 @@ const ContactModal: FC<Props> = ({ openModal, setOpenModal }) => {
                 <input
                   type="email"
                   name="emailAddress"
-                  value={formData.emailAddress}
                   onChange={handleChange}
-                  className="ont-medium font-inter -mt-6 text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
+                  className="ont-medium font-inter -mt-6 text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 px-[20px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
                   placeholder="Email Address"
                 />
                 <label className="m-0 text-[20px]">Phone Number</label>
                 <input
                   type="tel"
                   name="phoneNumber"
-                  value={formData.phoneNumber}
                   onChange={handleChange}
-                  className="ont-medium font-inter -mt-6 text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
+                  className="ont-medium font-inter -mt-6 text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 px-[20px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
                   placeholder="Phone Number"
                 />
                 {errors.phoneNumber && (
@@ -173,9 +183,8 @@ const ContactModal: FC<Props> = ({ openModal, setOpenModal }) => {
                 <label className="m-0 text-[20px]">Message</label>
                 <textarea
                   name="message"
-                  value={formData.message}
                   onChange={handleChange}
-                  className="ont-medium font-inter -mt-6 h-32 text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 pr-[100px] pl-[25px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
+                  className="ont-medium font-inter -mt-6 h-32 text-xl bg-[transparent] self-stretch rounded-8xs flex flex-row py-5 px-[20px] items-center justify-center border border-solid border-white border-opacity-30 text-white"
                   placeholder="Message"
                 />
                 {errors.message && (
