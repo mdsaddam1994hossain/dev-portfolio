@@ -34,7 +34,12 @@ const Service: NextPage<ServiceType> = ({
   }, [webDevelopmentColor]);
 
   return (
-    <div className="self-stretch flex-1 hover:top-4  rounded-8xs bg-white flex flex-col py-[55px] px-5 items-center justify-start gap-[37px] text-darkslategray-100 md:flex-[unset] md:self-stretch sm:flex-[unset] sm:self-stretch">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1000"
+      className="self-stretch flex-1 hover:top-4  rounded-8xs bg-white flex flex-col py-[55px] px-5 items-center justify-start gap-[37px] text-darkslategray-100 md:flex-[unset] md:self-stretch sm:flex-[unset] sm:self-stretch"
+    >
       <img className="relative w-24 h-20" alt="" src={icon} />
       <div className="self-stretch flex flex-col items-center justify-start gap-[24px]">
         <div className="self-stretch relative leading-[40px] font-semibold">
