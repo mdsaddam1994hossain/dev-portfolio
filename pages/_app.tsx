@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import type { AppProps } from "next/app";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./global.css";
 import "react-toastify/dist/ReactToastify.css";
 import Layout from "../components/Layout";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+    });
+  }, []);
   return (
     <React.Fragment>
       <Head>

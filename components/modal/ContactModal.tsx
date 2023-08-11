@@ -195,9 +195,9 @@ const ContactModal: FC<Props> = ({ openModal, setOpenModal }) => {
               </div>
               <button
                 type="submit"
-                className="cursor-pointer [border:none] py-3.5 px-[100px] bg-white  self-stretch rounded-8xs h-[72px] flex flex-row box-border items-center justify-center"
+                className="cursor-pointer [border:none] -mt-8 py-3.5 px-[100px] bg-white  self-stretch rounded-8xs h-[72px] flex flex-row box-border items-center justify-center"
               >
-                <span className="flex-1 relative text-13xl leading-[180.02%] font-semibold font-inter text-gray-200 text-center">
+                <span className="flex-1 relative text-13xl leading-[170.02%] font-semibold font-inter text-gray-200 text-center">
                   {loading ? (
                     <div className="flex space-x-2 animate-spin justify-center">
                       <div className="animate-spin justify-center text-center rounded-full border-t-2  border-solid h-6 w-6"></div>

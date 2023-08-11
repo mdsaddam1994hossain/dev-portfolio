@@ -12,12 +12,12 @@ const Hero: NextPage = () => {
             FullStack <br /> Developer
           </h4>
         </div>
-        <div className="self-stretch flex flex-row items-center justify-start text-gray-600">
-          <p className="m-0 flex-1 relative leading-[36px] sm:text-xl">
-            JavaScript Full Stack Developer: React, React Native, Node.js,
-            Next.js, GraphQL
-          </p>
-        </div>
+        {/* <div className="self-stretch flex flex-row items-center justify-start text-gray-600"> */}
+        <p className="m-0 flex-1 relative leading-[36px] sm:text-xl">
+          Full Stack Developer: React, React Native, Node.js, Next.js, GraphQL
+          developer
+        </p>
+        {/* </div> */}
         <div className="rounded-8xs bg-white flex flex-row py-3 px-5 items-center justify-center gap-[12px] text-darkslategray-100 font-manrope">
           <img
             className="relative w-[24.29px] h-[18.89px] overflow-hidden shrink-0"

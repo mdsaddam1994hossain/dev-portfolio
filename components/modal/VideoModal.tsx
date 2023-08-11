@@ -41,7 +41,7 @@ const VideoModal: FC<Props> = ({ openModal, setOpenModal, videoUrl }) => {
           <div className="relative  h-96 rounded-xl  lg:h-96 xl:h-[450px]">
             <ReactPlayer
               url={`${videoUrl}`}
-              className="react-player-large"
+              className="react-player-large !rounded-lg"
               style={{ borderRadius: "16px" }}
               playIcon={<button onClick={() => setPlaying(true)} />}
               controls={true}
