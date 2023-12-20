@@ -22,10 +22,10 @@ const DevelopmentPortfolioRakin: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Rakin Afser | Fullstack Developer Portfolio</title>
+        <title>Saddam Hossain | Fullstack Developer Portfolio</title>
         <meta
           name="description"
-          content="Welcome to the portfolio of Rakin Afser, a skilled and versatile Fullstack Developer. Explore a showcase of web development projects, highlighting expertise in front-end and back-end technologies. Get in touch for collaborations and opportunities."
+          content="Welcome to the portfolio of Saddam Hossain, a skilled and versatile Fullstack Developer. Explore a showcase of web development projects, highlighting expertise in front-end and back-end technologies. Get in touch for collaborations and opportunities."
         />
       </Head>
 

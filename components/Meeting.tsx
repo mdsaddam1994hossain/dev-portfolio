@@ -11,7 +11,7 @@ const Meeting = () => {
           data-aos-duration="500"
           className="text-[56px] font-poppins sm:text-[48px] font-semibold text-center text-gray-200"
         >
-          Schedule a Meeting <br /> Talk with Rakin Afser
+          Schedule a Meeting <br /> Talk with Saddam Hossain
         </h1>
         <p
           data-aos="fade-up"

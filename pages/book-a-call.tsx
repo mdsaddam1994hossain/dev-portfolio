@@ -7,11 +7,11 @@ const BookACall = () => {
     <div>
       <Head>
         <title>
-          Schedule a Meeting with Rakin Afser | Fullstack Developer Portfolio
+          Schedule a Meeting with Saddam Hossain | Fullstack Developer Portfolio
         </title>
         <meta
           name="description"
-          content="Ready to discuss your projects? Schedule a meeting with Rakin Afser, a skilled Fullstack Developer. Let's collaborate and bring your ideas to life."
+          content="Ready to discuss your projects? Schedule a meeting with Saddam Hossain, a skilled Fullstack Developer. Let's collaborate and bring your ideas to life."
         />
       </Head>
       <Calendly />

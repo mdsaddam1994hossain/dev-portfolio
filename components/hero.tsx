@@ -11,7 +11,7 @@ const Hero: NextPage = () => {
       >
         <div className="self-stretch flex flex-col py-[9px] pr-[58px] pl-0 items-start justify-start gap-[9px] text-13xl">
           <p className="m-0 self-stretch relative tracking-[-0.5px] leading-[73px] sm:text-5xl">
-            Hey, I’m Rakin Afser
+            Hey, I’m Saddam Hossain
           </p>
           <h4 className="m-0 sm:text-[64px] self-stretch relative text-91xl tracking-[-0.5px] leading-[110px] font-semibold font-inherit text-white sm:text-51xl sm:leading-[80px]">
             FullStack <br /> Developer
@@ -33,7 +33,7 @@ const Hero: NextPage = () => {
             className="relative font-semibold text-[inherit] [text-decoration:none]"
             href="mailto:r.afser01@gmail.com"
           >
-            r.afser01@gmail.com
+           saddam30061994@gmail.com
           </a>
         </div>
       </div>
@@ -41,9 +41,9 @@ const Hero: NextPage = () => {
         data-aos="fade-left"
         data-aos-delay="100"
         data-aos-duration="1000"
-        className="relative w-[493px] sm:w-full h-auto object-cover"
+        className="relative w-[493px] sm:w-full h-auto object-cover rounded-full"
         alt=""
-        src="/frame-1942-1@2x.png"
+        src="/saddam.jpg"
       />
     </div>
   );

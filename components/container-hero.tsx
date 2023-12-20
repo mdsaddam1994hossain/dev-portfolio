@@ -6,7 +6,7 @@ const ContainerHero: NextPage = () => {
       <div className="flex-1 flex flex-col items-start justify-start gap-[41px] md:flex-[unset] md:self-stretch">
         <div className="self-stretch flex flex-col py-[9px] pr-[58px] pl-0 items-start justify-start gap-[9px] text-13xl">
           <p className="m-0 self-stretch relative tracking-[-0.5px] leading-[73px] sm:text-5xl">
-            Hey, I’m Rakin Afser
+            Hey, I’m Saddam Hossain
           </p>
           <h4 className="m-0 self-stretch relative text-91xl tracking-[-0.5px] leading-[110px] font-semibold font-inherit text-white sm:text-45xl sm:leading-[70px]">
             <p className="m-0">{`Full Stack `}</p>

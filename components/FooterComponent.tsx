@@ -4,7 +4,7 @@ const Footer: NextPage = () => {
   return (
     <div className="self-stretch bg-darkslategray-100 flex flex-row py-12 px-[159px] items-center justify-between text-left text-xl text-white font-poppins lg:pl-40 lg:pr-40 lg:box-border md:flex-col md:gap-[48px] md:pl-9 md:pr-9 md:box-border sm:gap-[24px] sm:items-start sm:justify-end">
       <div className="relative w-full tracking-[-0.5px] leading-[36px] sm:text-lg sm:text-center">
-        Develop by Rakin Afser — Copyright 2023
+        Develop by Saddam Hossain — Copyright 2023
       </div>
       <div className="flex flex-row w-full justify-end sm:justify-center gap-[40px] md:gap-[32px]">
         <a
