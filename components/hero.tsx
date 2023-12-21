@@ -19,7 +19,7 @@ const Hero: NextPage = () => {
         </div>
         {/* <div className="self-stretch flex flex-row items-center justify-start text-gray-600"> */}
         <p className="m-0 flex-1 relative leading-[36px] sm:text-xl">
-          Full Stack Developer: React, React Native, Node.js, Next.js, GraphQL
+          Full Stack Developer: React, React Native, Node.js, Next.js
           developer
         </p>
         {/* </div> */}
