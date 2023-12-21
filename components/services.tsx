@@ -11,7 +11,7 @@ const Services: NextPage = () => {
         <h4
           data-aos="flip-up"
           data-aos-duration="500"
-          className="m-0 self-stretch relative text-[inherit] leading-[80px] font-semibold font-inherit sm:text-[48px]"
+          className="m-0 self-stretch relative text-[40px] leading-[80px] font-semibold font-inherit sm:text-[32px]"
         >
           <span>Services</span>
           <span className="text-gray-100">.</span>
@@ -20,7 +20,7 @@ const Services: NextPage = () => {
           data-aos="fade-up"
           data-aos-delay="200"
           data-aos-duration="500"
-          className="m-0 self-stretch relative text-5xl text-gray-500 sm:text-xl"
+          className="m-0 self-stretch relative text-[24px] text-gray-500 sm:text-[18px]"
         >
           I create custom, responsive websites that meet the unique needs of
           businesses and individuals, leveraging my expertise in front-end and

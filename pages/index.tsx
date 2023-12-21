@@ -36,7 +36,7 @@ const DevelopmentPortfolioRakin: NextPage = () => {
         <About />
         <FeaturedWork />
         <TestimonialsContainer />
-        <Meeting />
+        {/* <Meeting /> */}
         <Contact />
       </div>
     </>

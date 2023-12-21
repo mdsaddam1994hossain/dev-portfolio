@@ -8,7 +8,7 @@ const Footer: NextPage = () => {
       </div>
       <div className="flex flex-row w-full justify-end sm:justify-center gap-[40px] md:gap-[32px]">
         <a
-          href="https://api.whatsapp.com/send?phone=01711385722"
+          href="https://api.whatsapp.com/send?phone=01674493677"
           target={"_blank"}
           className="block sm:hidden"
         >
@@ -19,7 +19,7 @@ const Footer: NextPage = () => {
           />
         </a>
         <a
-          href="https://api.whatsapp.com/send?phone=+8801711385722"
+          href="https://api.whatsapp.com/send?phone=+8801674493677"
           target={"_blank"}
           className="hidden sm:block "
         >
@@ -29,7 +29,7 @@ const Footer: NextPage = () => {
             src="/group.svg"
           />
         </a>
-        <a href="https://www.facebook.com/rakin.afser" target={"_blank"}>
+        <a href="https://www.facebook.com/saddam.hossain.9619934/" target={"_blank"}>
           <img
             className="relative w-[29.47px] h-[29.61px] cursor-pointer"
             alt=""
@@ -37,7 +37,7 @@ const Footer: NextPage = () => {
           />
         </a>
         <a
-          href="https://www.linkedin.com/in/rakin-afser-1004076b/"
+          href="https://www.linkedin.com/in/md-saddam-hossain-88b69623b/"
           target={"_blank"}
         >
           <img
@@ -46,7 +46,7 @@ const Footer: NextPage = () => {
             src="/vector5.svg"
           />
         </a>
-        <a
+        {/* <a
           href="https://www.youtube.com/channel/UC7jO-BCFN1awX2KuxmCYbew"
           target={"_blank"}
         >
@@ -55,7 +55,7 @@ const Footer: NextPage = () => {
             alt=""
             src="/youtube2.svg"
           />
-        </a>
+        </a> */}
       </div>
     </div>
   );

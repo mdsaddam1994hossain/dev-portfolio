@@ -30,8 +30,8 @@ const Hero: NextPage = () => {
             src="/icon.svg"
           />
           <a
-            className="relative font-semibold text-[inherit] [text-decoration:none]"
-            href="mailto:r.afser01@gmail.com"
+            className="relative font-semibold text-[16px] [text-decoration:none]"
+            href="mailto:saddam30061994@gmail.com"
           >
            saddam30061994@gmail.com
           </a>

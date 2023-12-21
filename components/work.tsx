@@ -10,7 +10,7 @@ const FeaturedWork = () => {
       <h4
         data-aos="flip-up"
         data-aos-duration="500"
-        className="m-0 self-stretch relative text-[56px] font-poppins leading-[70px] font-semibold font-inherit sm:text-[48px] sm:leading-[60px]"
+        className="m-0 self-stretch relative text-[40px] font-poppins leading-[70px] font-semibold font-inherit sm:text-[32px] sm:leading-[40px]"
       >
         Featured Work
       </h4>

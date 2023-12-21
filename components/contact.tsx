@@ -25,7 +25,7 @@ const Contact: NextPage = () => {
           <h4
             data-aos="flip-up"
             data-aos-duration="500"
-            className="m-0 self-stretch relative text-[inherit] tracking-[-0.5px] font-semibold font-inherit sm:text-29xl"
+            className="m-0 self-stretch relative text-[40px] tracking-[-0.5px] font-semibold font-inherit sm:text-[32px]"
           >
             {" "}
             Contact Me
@@ -35,7 +35,7 @@ const Contact: NextPage = () => {
           data-aos="fade-up"
           data-aos-delay="200"
           data-aos-duration="500"
-          className="self-stretch relative text-9xl leading-[40px] text-gray-600 sm:text-xl"
+          className="self-stretch relative text-[24px] leading-[40px] text-gray-600 sm:text-[18px]"
         >
           <p className="m-0">{`If you are looking to hire a developer, `}</p>
           <p className="m-0">I’m currently available for freelance work</p>
@@ -50,7 +50,7 @@ const Contact: NextPage = () => {
       >
         <button
           onClick={() => setOpenModal(true)}
-          className="bg-tomato-100 cursor-pointer font-medium font-poppins  bg-white w-full text-[32px] sm:text-[20px] text-gray-200  h-20 sm:h-12 rounded-[5px]"
+          className="cursor-pointer font-medium font-poppins  bg-white w-full text-[32px] sm:text-[20px] text-gray-200  h-20 sm:h-12 rounded-[5px]"
         >
           Give Us Your Information
         </button>

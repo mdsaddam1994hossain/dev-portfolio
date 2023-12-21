@@ -13,7 +13,7 @@ const TestimonialsContainer: NextPage = () => {
         <h4
           data-aos="flip-up"
           data-aos-duration="500"
-          className="m-0 self-stretch relative text-[inherit] tracking-[-0.5px] font-semibold font-inherit sm:text-29xl"
+          className="m-0 self-stretch relative text-[40px] tracking-[-0.5px] font-semibold font-inherit sm:text-[32px]"
         >
           Testimonials
         </h4>
@@ -21,7 +21,7 @@ const TestimonialsContainer: NextPage = () => {
           data-aos="fade-up"
           data-aos-delay="200"
           data-aos-duration="500"
-          className="m-0 self-stretch relative text-9xl leading-[40px] text-gray-600 sm:text-xl sm:leading-[28px]"
+          className="m-0 self-stretch relative text-[24px] leading-[40px] text-gray-600 sm:text-[18px] sm:leading-[28px]"
         >
           Customer reviews that build trust for a business
         </p>

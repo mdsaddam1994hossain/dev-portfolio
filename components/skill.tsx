@@ -11,7 +11,7 @@ const Skill: NextPage = () => {
           Skills and Abilities
         </h4> */}
         <div data-aos="flip-up" data-aos-duration="500">
-          <h4 className="m-0 text-[56px] sm:text-[48px]">
+          <h4 className="m-0 text-[40px] sm:text-[32px]">
             {" "}
             Skills and Abilities
           </h4>
@@ -20,11 +20,11 @@ const Skill: NextPage = () => {
           data-aos="fade-up"
           data-aos-delay="200"
           data-aos-duration="500"
-          className="m-0 self-stretch relative text-5xl text-gray-500 sm:text-xl"
+          className="m-0 self-stretch relative text-[24px] text-gray-500 sm:text-[18px]"
         >
           <span className="block">{`I have extensive JavaScript skills, including expertise in React, `}</span>
           <span className="block">
-            React Native, Node.js, Next.js, and GraphQL.
+            React Native, Node.js and Next.js.
           </span>
         </p>
       </div>
