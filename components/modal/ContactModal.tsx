@@ -80,15 +80,15 @@ const ContactModal: FC<Props> = ({ openModal, setOpenModal }) => {
       // If there are no errors, you can proceed with form submission or API call here.
       setLoading(true);
       try {
-        await firebase.firestore().collection("contact").add({
-          createdAt: new Date(),
-          name: formData?.fullName,
-          email: formData?.emailAddress,
-          phone: formData?.phoneNumber,
-          messageBox: formData?.message,
-          source: "Development profile",
-        });
-
+        // await firebase.firestore().collection("contact").add({
+        //   createdAt: new Date(),
+        //   name: formData?.fullName,
+        //   email: formData?.emailAddress,
+        //   phone: formData?.phoneNumber,
+        //   messageBox: formData?.message,
+        //   source: "Development profile",
+        // });
+       console.log(formData,"......")
         setLoading(false);
         toast("Success! We'll get back to you shortl", {
           position: "bottom-right",

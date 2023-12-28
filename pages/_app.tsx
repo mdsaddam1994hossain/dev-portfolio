@@ -22,11 +22,11 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <link
+        {/* <link
           rel="icon"
           href="/favicon/favicon.png"
           style={{ height: "15px", width: "8px" }}
-        />
+        /> */}
       </Head>
       <Layout>
         <Component {...pageProps} />
