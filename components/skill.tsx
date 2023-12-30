@@ -1,6 +1,28 @@
 import type { NextPage } from "next";
 
 const Skill: NextPage = () => {
+
+  const handleDownload = () => {
+    const downloadUrl = '/saddam_resume.pdf'; // Path to your resume file
+
+    // Create a link element
+    const link = document.createElement('a');
+
+    // Set the href attribute to the download URL
+    link.href = downloadUrl;
+
+    // Set the download attribute to specify the file name
+    link.download = 'resume.pdf';
+
+    // Append the link to the document
+    document.body.appendChild(link);
+
+    // Trigger a click on the link to start the download
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+  };
   return (
     <div
       id="skill"
@@ -68,6 +90,11 @@ const Skill: NextPage = () => {
             src="/pythonlogonotext-1@2x.png"
           />
         </div>
+      </div>
+      <div className="-my-12">
+        <button onClick={handleDownload}  className="py-2 px-8 font-sans text-lg font-semibold rounded-full">
+          Resume Download
+        </button>
       </div>
     </div>
   );
